@@ -1,8 +1,3 @@
-@import './fonts.css';
-@import './header.css';
-@import './modal.css';
-@import './form.css';
-
 :root {
 	--bg: #f1f1f1;
 	--primary: #f08539;
@@ -17,6 +12,210 @@
 	--primary-font: 'Moderustic';
 
 	--shadow-1: 0 0 14px 0 rgba(218, 218, 218, 0.2);
+}
+
+ @font-face {
+     font-family: 'SF Pro Text';
+     src: url('../fonts/secondary-bold.woff') format('woff');
+     font-weight: 600;
+     font-style: normal;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: 'SF Pro Text';
+     src: url('../fonts/secondary-medium.woff') format('woff');
+     font-weight: 500;
+     font-style: normal;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: 'SF Pro Text';
+     src: url('../fonts/secondary-regular.woff') format('woff');
+     font-weight: 400;
+     font-style: normal;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: 'SF Pro Text';
+     src: url('../fonts/secondary-regular-italic.woff') format('woff');
+     font-weight: normal;
+     font-style: italic;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: 'Moderustic';
+     src: url('../fonts/primary-semibold.woff') format('woff');
+     font-weight: 600;
+     /* Semibold = 600 */
+     font-style: normal;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: 'Moderustic';
+     src: url('../fonts/primary-medium.woff') format('woff');
+     font-weight: 500;
+     /* Medium = 500 */
+     font-style: normal;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: 'Moderustic';
+     src: url('../fonts/primary-bold.woff') format('woff');
+     font-weight: bold;
+     /* Bold = 700 */
+     font-style: normal;
+     font-display: swap;
+ }
+
+.form {
+	padding: 30px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: var(--shadow-1);
+}
+
+.form-request {
+	width: 600px;
+}
+
+.form__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.form__inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin-bottom: 50px;
+}
+
+input,
+textarea,
+select {
+	border: 1px solid #cdcdcd;
+	border-radius: 8px;
+	font-family: var(--secondary-font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 125%;
+	padding: 20px;
+	appearance: none;
+
+	&:placeholder {
+		color: var(--gray)
+	}
+
+	&:focus {
+		outline-color: var(--primary);
+	}
+}
+
+.label-checkbox {
+	display: flex;
+	gap: 10px;
+	font-family: var(--secondary-font);
+	line-height: 163%;
+	color: var(--gray);
+}
+
+.checkbox-custom {
+	width: 24px;
+	height: 24px;
+	border-radius: 8px;
+	border: 1px solid var(--gray);
+	position: relative;
+	transition: var(--transition);
+}  
+
+.checkbox-custom::before {
+	position: absolute;
+	content: url('../img/check.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: var(--transition);
+}
+
+.checkbox-hidden:checked ~ .checkbox-custom::before {
+	opacity: 1;
+}
+
+.checkbox-hidden:checked ~ .checkbox-custom {
+	background: var(--primary);
+	border-color: var(--primary);
+}
+
+.checkbox-hidden {
+	position: absolute;
+	opacity: 0;
+	width: 0; 
+	height: 0;
+	margin: 0;
+	padding: 0; 
+}
+
+.header {
+    background: var(--black);
+    padding: 18px 0;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+}
+
+.header__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu__link {
+    color: #fff;
+
+    &:hover {
+        transition: var(--transition);
+        color: var(--primary);
+    }
+}
+
+.header-phone {
+    color: #fff;
+
+    &:hover {
+        transition: var(--transition);
+        color: var(--primary);
+    }
+}
+
+.modal-wrapper {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--overlay-modal);
+	z-index: 101;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	backdrop-filter: blur(20px);
 }
 
 body {
