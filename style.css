@@ -1,7 +1,7 @@
 /* fonts.css */
 @font-face {
     font-family: 'SF Pro Text';
-    src: url('../fonts/secondary-bold.woff') format('woff');
+    src: url('fonts/secondary-bold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'SF Pro Text';
-    src: url('../fonts/secondary-medium.woff') format('woff');
+    src: url('fonts/secondary-medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: 'SF Pro Text';
-    src: url('../fonts/secondary-regular.woff') format('woff');
+    src: url('fonts/secondary-regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
     font-family: 'SF Pro Text';
-    src: url('../fonts/secondary-regular-italic.woff') format('woff');
+    src: url('fonts/secondary-regular-italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -33,7 +33,7 @@
 
 @font-face {
     font-family: 'Moderustic';
-    src: url('../fonts/primary-semibold.woff') format('woff');
+    src: url('fonts/primary-semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -41,7 +41,7 @@
 
 @font-face {
     font-family: 'Moderustic';
-    src: url('../fonts/primary-medium.woff') format('woff');
+    src: url('fonts/primary-medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -49,7 +49,7 @@
 
 @font-face {
     font-family: 'Moderustic';
-    src: url('../fonts/primary-bold.woff') format('woff');
+    src: url('fonts/primary-bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -192,7 +192,7 @@ select::-webkit-calendar-picker-indicator {
 
 .checkbox-custom::before {
     position: absolute;
-    content: url('../img/check.svg');
+    content: url('img/check.svg');
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0;
@@ -463,7 +463,7 @@ main {
 .about__inner::before {
     position: absolute;
     content: "";
-    background-image: url('../img/about/design.png');
+    background-image: url('img/about/design.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 730px;
@@ -608,7 +608,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100svh;
-    background-image: url('../img/request.png');
+    background-image: url('img/request.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -650,7 +650,7 @@ main {
 .services__tabs::before {
     position: absolute;
     content: "";
-    background-image: url('../img/services/design.png');
+    background-image: url('img/services/design.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 854px;
@@ -684,7 +684,7 @@ main {
     content: "";
     top: -100px;
     right: -30px;
-    background-image: url('../img/reviews/design.png');
+    background-image: url('img/reviews/design.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 443px;
